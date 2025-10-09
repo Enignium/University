@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "4cde821d52b9c73d",
+    "type": "split",
+    "children": [
+      {
+        "id": "3195c122f8b5d3d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97db3736b8aca0db",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9e0726677bfdc79d",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa24161f1e28a53f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e25559fd694e954",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora risorse"
+            }
+          },
+          {
+            "id": "7541c205f9105092",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "cbf9ab5003c48b3a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "29b3c19fb4fbd24b",
+    "type": "split",
+    "children": [
+      {
+        "id": "57f2b05f86e7a1c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1460728232cd944",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Università/Complex Social Network/Slide 1.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti a Slide 1"
+            }
+          },
+          {
+            "id": "1cd98bb473fe89cb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Cose pazze della lezione di oggi.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita da Cose pazze della lezione di oggi"
+            }
+          },
+          {
+            "id": "eee9672cc370fbe6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "9e50e3eec829dd18",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Cose pazze della lezione di oggi.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura di Cose pazze della lezione di oggi"
+            }
+          },
+          {
+            "id": "3966e936049acc26",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 282.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "3966e936049acc26",
+  "lastOpenFiles": [
+    "Università/Complex Social Network/Slide 1.pdf",
+    "Università/Dependable/Slide 2.pdf",
+    "Università/Dependable/Dependable oggi.md",
+    "Università/Dependable/Appunti.md",
+    "Università/Complex Social Network/Appunti.md",
+    "conflict-files-obsidian-git.md",
+    "Cose pazze della lezione di oggi.md",
+    "Università/Dependable/Lezione_1_Dependable_Computing_Appunti.md",
+    "Senza nome 1.base",
+    "Senza nome 2.base",
+    "Senza nome.base",
+    "Università/Ml/Senza nome.md",
+    "Università/Dependable/Benvenuto.md",
+    "Università/Ml",
+    "Università/Dependable",
+    "Università/Complex Social Network",
+    "Università",
+    "Appunti/Università/Ml/Senza nome.md",
+    "Appunti/Università/Ml",
+    "Appunti/Università/Dependable/Dependable oggi.md",
+    "Appunti/Università/Complex Social Network/2 ottobre.md",
+    "Appunti/Università/Dependable/Benvenuto.md",
+    "Senza nome 1.md"
+  ]
+}
