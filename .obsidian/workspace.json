@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Università/Ml/Ai.md",
+                "file": "Università/Cose pazze della lezione di oggi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ai"
+              "title": "Cose pazze della lezione di oggi"
             }
           }
         ],
@@ -198,11 +198,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e25559fd694e954",
+  "active": "786168ad146c1f2c",
   "lastOpenFiles": [
-    "Cose pazze della lezione di oggi.md",
     "Università/Ml/Ai.md",
+    "Università/Cose pazze della lezione di oggi.md",
+    "Università/Complex Social Network/Senza nome.md",
     "Università/Dependable/Dependable oggi.md",
+    "Università/Complex Social Network/7",
     "Università/Ml/Regressione lineare-checkpoint.ipynb",
     "Università/Dependable/Slide 2.pdf",
     "Università/Dependable/Appunti.md",
@@ -215,11 +217,9 @@
     "Senza nome 1.base",
     "Senza nome 2.base",
     "Senza nome.base",
-    "Università/Ml/Ai.md",
     "Università/Dependable/Benvenuto.md",
     "Università/Ml",
     "Università/Dependable",
-    "Università/Complex Social Network",
     "Appunti/Università/Ml/Senza nome.md",
     "Appunti/Università/Dependable/Dependable oggi.md",
     "Appunti/Università/Complex Social Network/2 ottobre.md",
