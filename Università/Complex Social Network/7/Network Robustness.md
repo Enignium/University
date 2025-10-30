@@ -1,0 +1,169 @@
+I network costituiscono la base di quasi tutti i sistemi reali biologici, tecnologici, sociali e ingegneristici.
+# Robustezza
+
+Si definisce *Robustezza* la capacità della rete di continuare a funzionare anche in presenza di guasti o rimozioni di nodi.
+
+La struttura del network è ciò che ne determina la sua sopravvivenza:
+
+- Hub: (nodi altamente connessi) mantengono la coesione;
+
+- Ridondanza: offre percorsi alternativi;
+
+- Clustering: (connessioni locali dense) limita la frammentazione;
+
+
+> [!caution] Nota
+> Gli errori e i guasti sono inevitabili in qualsiasi sistema, nonostante ciò, **molti sistemi naturali e sociali mostrano una sorprendente capacità di mantenere le proprie funzioni anche quando alcuni componenti falliscono**. **Non è il singolo nodo** a determinare la sopravvivenza di una rete, ma **l’organizzazione complessiva dei collegamenti**
+> 
+## Percolation Theory
+
+![[Pasted image 20251029153143.png|400]]
+
+I grafi rappresentano dei **Random Networks**, caratterizzate dall’assenza di veri e propri hub.  
+La figura mostra l’effetto della **rimozione progressiva di nodi** sulla connettività della rete.
+La **rimozione di un nodo qualsiasi** (come quello evidenziato in verde) comporta l’eliminazione automatica di tutti gli archi ad esso collegati.  
+Questo processo, anche se applicato a un numero limitato di nodi, può determinare una **riduzione significativa della connettività complessiva**, fino a provocare la **frammentazione** del grafo in **più sottocomponenti isolate**.
+
+> [!caution] Nota
+> In molte reti reali, la perdita di un singolo nodo ha effetti limitati; ma la perdita di **nodi altamente connessi (hub)** può provocare un **collasso improvviso**.
+
+## Percolazione
+
+La **teoria della percolazione** descrive il modo in cui la **connettività di un sistema** emerge gradualmente man mano che aumenta la **probabilità p** che due nodi siano connessi.
+
+![[Pasted image 20251029160441.png|700]]
+
+- Per **valori bassi di p (es. p = 0.1)**, la rete contiene solo **piccoli cluster isolati** (figura a)
+- Quando **p supera un valore critico pₙ**, questi piccoli cluster iniziano a **fondersi**, dando origine a una **componente gigante** che attraversa l’intera rete (figura b)
+
+In corrispondenza di $p_c$ si osserva quindi una **transizione di fase**: il sistema passa da una condizione disconnessa a una condizione globalmente connessa.
+
+>[!caution] Nota
+> Come esattamente per i modelli Random Networks, esperimenti diversi, danno risultati diversi. Quindi con la stessa probabilità ogni volta si otterranno componenti diverse.
+
+### Emergence and Disappearance of Large-Scale Connectivity
+
+La **transizione di percolazione** è il fenomeno di **comparsa e scomparsa della connettività globale** in una rete soggetta a **rimozione casuale di nodi o link**.
+
+Definiamo come *Percolation Threshold* $p_c$ la soglia critica oltre la quale la rete passa da uno stato frammentato ad uno stato connesso.
+
+- Per $p < p_c$ : i nodi sono riuniti in piccoli cluster isolati $\rightarrow$ **assenza di connettività globale**.
+
+- Per $p > p_c$ : compare una **componente gigante** che connette la maggior parte dei nodi $\rightarrow$ **rete "percolante"**.
+ 
+Definiamo come *Critical Exponents*:
+$$\langle s \rangle \sim |p - p_c|^{-\gamma}$$
+
+Con $p$ probabilità attuale, $p_c$ probabilità critica e $\gamma$ parametro discriminante, la dimensione media dei cluster finiti.
+Cresce rapidamente all’avvicinarsi di $p_c$ $\rightarrow$ diverge al punto critico ([[Andamento all'aumentare di p_c|figura c]])
+
+$$P_{\infty} \sim (p - p_c)^{\beta}$$
+
+Con $\beta$ come parametro discriminante, la probabilità che un nodo scelto casualmente appartenga alla componente gigante.  
+Per $p < p_c$ vale 0, mentre per $p > p_c$ aumenta rapidamente ([[Andamento all'aumentare di p_c|figura d]])
+
+$$\xi \sim |p - p_c|^{-\nu}$$
+
+Con $\nu$ come parametro discriminante, la distanza media fra nodi appartenenti allo stesso cluster.
+Al punto $p_c$ , ξ diverge: l’intera rete diventa interconnessa
+
+>[!caution] Nota
+ >La **transizione di percolazione** rappresenta la **soglia di robustezza strutturale** di una rete: sotto $p_c$ il sistema è frammentato e vulnerabile, sopra $p_c$ diventa robusto e capace di mantenere la propria funzionalità globale.  
+È un fenomeno **universale**, analogo alle transizioni di fase in fisica (come il passaggio acqua–ghiaccio), che descrive come la **struttura di un network determina la sua resilienza** a errori o attacchi.
+
+>[!danger] Importante
+>La soglia critica $p_c$ **dipende dalla dimensionalità del sistema**: al crescere della dimensione, diminuisce la frazione di nodi necessari per ottenere la connettività globale. 
+>- In **2D (reticolo quadrato)**: $p_c$ ≈ 0.593
+>- In **3D (reticolo cubico)**: $p_c$ ≈ 0.3116
+Questo accade perché, in dimensioni maggiori, **ogni nodo può connettersi a un numero più elevato di vicini**, aumentando le probabilità di formare un cluster percolante
+
+## Inverse Percolation Transition and Robustness
+
+La teoria della percolazione inversa descrive l'impatto della perdita casuale di nodi sull'integrità strutturale del sistema.
+Considerando un **reticolo quadrato** caratterizzato da n collegamenti tra n nodi, rimuovendo casualmente una frazione f di nodi, si avranno degli effetti sulla connettività globale.
+
+- Per f piccolo, i nodi rimossi non produrranno grossi danni in quanto la rete conserverà la componente gigante
+
+- Aumentando f, i nodi inizieranno ad isolarsi, la componente gigante quindi si restringerà
+
+- Quando $f > f_c$ la componente gigante crollerà bruscamente formando piccoli componenti connesse
+ 
+![[Pasted image 20251030093532.png|650]]
+
+Il grafico sopra mostra la dipendenza di $P_{\infty}$ da $f$ :
+
+- Per $f < f_n$ $\rightarrow$ $P_{\infty} > 0$ : Esiste ancora una componente gigante
+
+- $f\ {\geq}\ f_n$ $\rightarrow$ $P_{\infty} > 0$ : La rete di frammenta completamente
+
+>[!caution] Osservazione
+>La transizione non è graduale ma **discontinua**, esattamente come una **transizione di fase**: un piccolo aumento di $f$ oltre la soglia provoca la perdita improvvisa della connettività globale.
+
+Vediamo l'equivalenza con la percolazione diretta ponendo: $$f = 1-p$$ la rimozione di nodi (f) corrisponde alla riduzione della probabilità di occupazione (p). Pertanto i parametri critici ($\gamma,\ \beta,\ \nu$) che descrivono la transizione restano invariati.
+
+# Percolazione nelle reti Reali
+
+La teoria affrontata, studia il caso ideale usando un reticolo quadrato, le reti reali non hanno però una struttura regolare.
+La logica rimane la stessa ma dipende strettamente dalla topologia della rete.
+
+- Nei Random Networks la percolazione descrive il fenomeno del collasso: la rete subisce quindi una transizione di fase improvvisa quando la frazione di nodi rimossi supera una soglia critica $f_c$Gli esponenti critici che governano questa transizione sono: $$\gamma_p=1,\ \beta_p =1,\ \nu=\frac{1}{2}$$
+- Nelle Scale-free networks, alcune caratteristiche cambiano: la presenza di hub ad altissimo grado modifica la soglia e la natura della transizione
+
+# Robustezza nella reti Scale-free
+
+Come detto pocanzi, le reti Scale-free si comportano diversamente dalle reti regolari o casuali: sono caratterizzati da una distribuzione del grado che segue una legge di potenza e quindi contiene pochi hub estremamente connessi e molti nodi connessi debolmente.
+
+>[!question] Quesito
+>Come influenzano questi hub la transizione di percolazione e la robustezza complessiva della rete?
+
+Consideriamo la **rete Internet** vista a livello di router.  
+Rimuoviamo i nodi in modo casuale, uno dopo l’altro, osservando come varia la dimensione della **componente gigante**.
+Secondo la teoria classica della percolazione, quando la frazione di nodi rimossi supera la soglia $f_c$ la rete dovrebbe frammentarsi improvvisamente in molte sottoreti isolate.
+Nonostante ciò non è il comportamento osservato:
+- Anche rimuovendo una grande frazione di nodi, la rete continua a restare connessa
+
+- La componente gigante diminuisce gradualmente, collassando solo quando quasi tutti i nodi vengono rimossi
+
+>[!caution] Osservazione
+>Non esiste una soglia di percolazione visibile come nei reticoli o nei random network!
+
+>[!summary] Interpretazione
+>Nelle reti Scale-free la connettività glibale è mantenuta da pochi hub al alto grado, che fungono da colonne portanti. La maggior parte dei nodi, sono di grado basso e quindi possono essere rimossi senza effetti significativi. Gli hub assicurano la rete connessa.
+
+![[Pasted image 20251030101216.png|650]]
+
+I due grafici rappresentano la dimensione relativa della componente gigante, espressa come rapporto tra la frazione di nodi rimossi e la percentuale di nodi ancora appartenenti alla componente gigante: $$\frac{P_{\infty}(f)}{P_{\infty}(0)}$$
+La figura a (internet) come la figura b (Rete Scale-free simulata) mostra che la componente gigante decresce lentamente al crescere di $f$. Anche dopo aver eliminato il 70-80% dei nodi, la rete resta connessa. Ancora una volta, per spezzare la connettività globale bisogna rimuovere quasi tutti i router.
+
+## Criterio di Molloy-Reed
+
+Permette di determinare in modo generale se una rete possiede o meno una **componente gigante** indipendentemente dal tipo di distribuzione dei gradi.
+
+> [!check] Assunzione
+> Perché una rete sia globalmente connessa, i nodi devono, in media, collegarsi ad **almeno due altri nodi** all’interno della componente gigante.
+
+Formula generale: $$k = \frac{\langle k^2 \rangle}{\langle k \rangle} > 2$$
+Con $\langle k \rangle$ grado medio dei nodi e $\langle k^2 \rangle$ media del quadrato dei gradi, che misura la varianza della distribuzione. $k$ quindi corrisponde al rapporto che combina densità e dispersione della connettività
+
+- Se $k < 2$ $\rightarrow$ la rete **non ha una componente gigante**, ma tanti piccoli cluster isolati
+
+- Se $k > 2$ $\rightarrow$ esiste una **componente gigante** $\rightarrow$ la rete è connessa su larga scala
+  
+Più grande è $\langle k^2 \rangle$, più è probabile che la rete resti connessa anche dopo guasti.
+
+# Tolleranza agli attacchi
+
+Come abbiamo detto, i nodi hub svolgono un ruolo fondamentale nel mantenere la connettività globale delle reti scale-free. Ipotizziamo però un caso in cui la rimozione non sia casuale ma mirata.
+Di base la rimozione di un singolo hub non dovrebbe frammentare la rete, tuttavia, dopo la rimozione di diversi pochi hub, grandi porzioni della rete si disconnettono. Nelle reti Scale-free questo fenomeno è molto più rapido rispetto alle reti casuali: esiste un punto critico, con un valore molto basso, per cui basta eliminare una piccola frazione dei nodi hub per disintegrare la rete.
+
+![[Pasted image 20251030104055.png|600]]
+
+Rispetto al grafico precedentemente mostrato, come vediamo dalla curva viola, quando si rimuovono i nodi in ordine decrescente di grado, il comportamento è l'opposto:
+
+- Dopo la rimozione di appena il 20-25% dei nodi, la rete collassa bruscamente.
+
+Il valore di $P_{\infty}(f)$ crolla quasi a zero e la rete si frammenta in tanti piccoli gruppi scollegati
+
+>[!caution] Osservazione
+> Le reti _scale-free_ sono **robuste ai guasti casuali**, ma **estremamente fragili ad attacchi mirati**
+
