@@ -2,5 +2,10 @@
   "pdf-plus",
   "execute-code",
   "obsidian-git",
+<<<<<<< HEAD
   "callout-manager"
+=======
+  "callout-manager",
+  "various-complements"
+>>>>>>> origin/main
 ]
