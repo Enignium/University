@@ -31,7 +31,7 @@ Questo processo, anche se applicato a un numero limitato di nodi, può determina
 
 La **teoria della percolazione** descrive il modo in cui la **connettività di un sistema** emerge gradualmente man mano che aumenta la **probabilità p** che due nodi siano connessi.
 
-![[Pasted image 20251029160441.png|700]]
+![[Pasted image 20251029160441.png|650]]
 
 - Per **valori bassi di p (es. p = 0.1)**, la rete contiene solo **piccoli cluster isolati** (figura a)
 - Quando **p supera un valore critico pₙ**, questi piccoli cluster iniziano a **fondersi**, dando origine a una **componente gigante** che attraversa l’intera rete (figura b)
