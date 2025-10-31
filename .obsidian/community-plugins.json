@@ -1,7 +1,11 @@
 [
-  "pdf-plus",
-  "execute-code",
-  "obsidian-git",
+  "calendar",
+  "obsidian-icon-folder",
+  "obsidian-dictionary-plugin",
+  "ink",
   "callout-manager",
+  "obsidian-git",
+  "execute-code",
+  "pdf-plus",
   "various-complements"
 ]
