@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3195c122f8b5d3d7",
+        "id": "5065180263fd537c",
         "type": "tabs",
         "children": [
           {
-            "id": "786168ad146c1f2c",
+            "id": "f9164a048ae6b0d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "29b3c19fb4fbd24b",
@@ -142,27 +143,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cose pazze della lezione di oggi.md",
+                "file": "Università/Complex Social Network/8. Communities.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Cose pazze della lezione di oggi"
+              "title": "Struttura di 8. Communities"
             }
           },
           {
-            "id": "3966e936049acc26",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "f1adbe0d2fc234e6",
+            "id": "31b44db12d53d38e",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -170,13 +161,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "d1718f9e1875bce2",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,44 +188,46 @@
       "daily-notes:Apri nota del giorno": false,
       "templates:Inserisci modello": false,
       "command-palette:Apri riquadro comandi": false,
+      "callout-manager:Insert Callout": false,
+      "obsidian-git:Open Git source control": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-git:Open Git source control": false,
-      "callout-manager:Insert Callout": false
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "786168ad146c1f2c",
+  "active": "f9164a048ae6b0d5",
   "lastOpenFiles": [
-    "Università/Complex Social Network/Immagini/Pasted image 20251102182843.png",
+    "Università/Complex Social Network/Immagini/Pasted image 20251103102756.png",
+    "Università/Complex Social Network/Immagini/Pasted image 20251103095637.png",
+    "Università/Complex Social Network/Immagini/Pasted image 20251103095212.png",
+    "Università/Complex Social Network/Immagini/Pasted image 20251103095028.png",
+    "Università/Complex Social Network/7. Network Robustness.md",
     "Università/Complex Social Network/8. Communities.md",
-    "Università/Complex Social Network/Immagini/Pasted image 20251102164253.png",
-    "Università/Complex Social Network/Immagini/Pasted image 20251102173001.png",
+    "Università/Complex Social Network/Immagini/Pasted image 20251102182843.png",
     "Università/Complex Social Network/Immagini/Pasted image 20251102181310.png",
     "Università/Complex Social Network/Immagini/Pasted image 20251102180819.png",
     "Università/Complex Social Network/Immagini/Pasted image 20251102180544.png",
     "Università/Complex Social Network/Immagini/Pasted image 20251102175320.png",
     "Università/Complex Social Network/Immagini/Pasted image 20251102175259.png",
-    "Università/Complex Social Network/7. Network Robustness.md",
     "Università/Complex Social Network/Immagini/Pasted image 20251102174706.png",
-    "Università/Complex Social Network/Immagini/Pasted image 20251102174007.png",
-    "conflict-files-obsidian-git.md",
     "Università/Complex Social Network/Network Robustness.md",
-    "Università/Complex Social Network/Immagini",
     "Ink/Writing/2025.10.30 - 15.20pm.writing",
-    "Ink/Drawing/2025.10.30 - 15.15pm.drawing",
     "Ink/Writing",
+    "Ink/Drawing/2025.10.30 - 15.15pm.drawing",
     "Ink/Drawing",
     "Ink",
-    "Altro/Cose pazze della lezione di oggi.md",
-    "Altro",
+    "Università/Complex Social Network/7/Andamento all'aumentare di p_c.md",
     "Università/Complex Social Network/Andamento all'aumentare di p_c.md",
-    "Università/Cose pazze della lezione di oggi.md",
+    "conflict-files-obsidian-git.md",
     "Immagini/Complex Social Network",
     "Immagini",
+    "Università/Complex Social Network/8",
+    "Altro",
+    "Altro/Cose pazze della lezione di oggi.md",
+    "Università/Complex Social Network/Senza nome.md",
+    "Università/Complex Social Network/Immagini",
     "Università/Ml/Ai.md",
     "Università/Dependable/Dependable oggi.md",
-    "Università/Complex Social Network/7",
     "Università/Dependable/Appunti.md",
     "Università/Complex Social Network/Appunti.md",
     "sdacjndsnfsdjfsdjjns.md",
