@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Università/Complex Social Network/10..md",
+                "file": "Università/Complex Social Network/11. Heuristics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10."
+              "title": "11. Heuristics"
+            }
+          },
+          {
+            "id": "8ad028ae78d830b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Università/Complex Social Network/2. Teoria dei Grafi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2. Teoria dei Grafi"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,9 +209,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "45b3f00f616891e1",
+  "active": "8ad028ae78d830b9",
   "lastOpenFiles": [
-    "Università/Complex Social Network/10..md",
+    "Università/Complex Social Network/10. Spreading Phenomena.md",
+    "Università/Complex Social Network/11. Heuristics.md",
+    "Università/Complex Social Network/9. Network Robustness.md",
+    "Università/Complex Social Network/8. Communities.md",
+    "Università/Complex Social Network/2. Teoria dei Grafi.md",
+    "Università/Complex Social Network/2/pdf2.pdf",
+    "Università/Complex Social Network/2 Teoria dei Grafi.md",
     "Ink/Writing/2025.10.30 - 15.20pm.writing",
     "Ink/Drawing/2025.10.30 - 15.15pm.drawing",
     "Università/Complex Social Network/2/2. Graph Theory.md",
@@ -204,10 +225,7 @@
     "Università/Complex Social Network/3/3. Random Networks.md",
     "Università/Complex Social Network/3/Chapter3.pdf",
     "Università/Complex Social Network/3",
-    "Università/Complex Social Network/9. Spreading Phenomena.md",
     "Università/Complex Social Network/2",
-    "Università/Complex Social Network/8. Communities.md",
-    "Università/Complex Social Network/7. Network Robustness.md",
     "Università/Complex Social Network/Immagini/Pasted image 20251110103339.png",
     "Università/Complex Social Network/Immagini/Pasted image 20251110093055.png",
     "Università/Complex Social Network/Immagini/Pasted image 20251110092418.png",
@@ -225,7 +243,6 @@
     "Università/Complex Social Network/7/Andamento all'aumentare di p_c.md",
     "Università/Complex Social Network/Andamento all'aumentare di p_c.md",
     "conflict-files-obsidian-git.md",
-    "Immagini/Complex Social Network",
     "Altro/Cose pazze della lezione di oggi.md",
     "Università/Ml/Ai.md",
     "Università/Dependable/Dependable oggi.md",
