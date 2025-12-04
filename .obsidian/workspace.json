@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Università/Complex Social Network/2. Teoria dei Grafi.md",
+                "file": "Università/Complex Social Network/13. Dimensionality Reduction PCA e t-SNE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Teoria dei Grafi"
+              "title": "13. Dimensionality Reduction PCA e t-SNE"
+            }
+          },
+          {
+            "id": "72eaf51d14fa3fbb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Università/Complex Social Network/13. Dimensionality Reduction PCA e t-SNE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "13. Dimensionality Reduction PCA e t-SNE"
             }
           }
         ],
@@ -211,15 +225,20 @@
   },
   "active": "8ad028ae78d830b9",
   "lastOpenFiles": [
-    "Università/Complex Social Network/10. Spreading Phenomena.md",
+    "Università/Complex Social Network/12. Machine Learning for link prediction.md",
     "Università/Complex Social Network/11. Heuristics.md",
+    "Università/Complex Social Network/13. Dimensionality Reduction PCA e t-SNE.md",
+    "Università/Complex Social Network/10. Spreading Phenomena.md",
     "Università/Complex Social Network/9. Network Robustness.md",
-    "Università/Complex Social Network/8. Communities.md",
+    "Università/Complex Social Network/3. Random Network.md",
+    "Ink/Drawing/2025.10.30 - 15.15pm.drawing",
+    "Università/Complex Social Network/3 Random Network.md",
+    "Altro/Cose pazze della lezione di oggi.md",
     "Università/Complex Social Network/2. Teoria dei Grafi.md",
+    "Università/Complex Social Network/8. Communities.md",
     "Università/Complex Social Network/2/pdf2.pdf",
     "Università/Complex Social Network/2 Teoria dei Grafi.md",
     "Ink/Writing/2025.10.30 - 15.20pm.writing",
-    "Ink/Drawing/2025.10.30 - 15.15pm.drawing",
     "Università/Complex Social Network/2/2. Graph Theory.md",
     "Università/Complex Social Network/2/Chapter2.pdf",
     "Università/Complex Social Network/3/3. Random Networks.md",
@@ -243,7 +262,6 @@
     "Università/Complex Social Network/7/Andamento all'aumentare di p_c.md",
     "Università/Complex Social Network/Andamento all'aumentare di p_c.md",
     "conflict-files-obsidian-git.md",
-    "Altro/Cose pazze della lezione di oggi.md",
     "Università/Ml/Ai.md",
     "Università/Dependable/Dependable oggi.md",
     "Università/Dependable/Appunti.md",
@@ -252,9 +270,6 @@
     "Università/Dependable/Lezione_1_Dependable_Computing_Appunti.md",
     "Università/Dependable/Benvenuto.md",
     "Appunti/Università/Ml/Senza nome.md",
-    "Appunti/Università/Dependable/Dependable oggi.md",
-    "Appunti/Università/Complex Social Network/2 ottobre.md",
-    "Appunti/Università/Dependable/Benvenuto.md",
-    "Senza nome 1.md"
+    "Appunti/Università/Dependable/Dependable oggi.md"
   ]
 }
