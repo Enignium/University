@@ -256,3 +256,39 @@ Invece di usare la **softmax completa** su tutto il vocabolario ( |V| ), che sar
 - tipicamente ( m \approx 5 \text{–} 20 ),
 - riduce il costo computazionale da ( O(|V|) ) a **O(m)**.
 
+Ecco la versione **pulita, sistemata e pronta per Obsidian**, perfettamente coerente con gli appunti precedenti.
+## Random Walks ↔ Word2Vec — Analogia Centrale
+
+## 🧩 Ruolo dei Random Walk
+
+Nei metodi di embedding per grafi (DeepWalk, Node2Vec):
+
+- i **random walk** svolgono il ruolo delle **frasi (sentences)**
+- i **nodi** svolgono il ruolo delle **parole (words)**
+$$
+\text{walk} ;\leftrightarrow; \text{sentence},  
+\qquad  
+\text{node} ;\leftrightarrow; \text{word}  
+$$
+## Corpus di Walk
+
+Generando **molti random walk** da ogni nodo:
+
+- otteniamo un **corpus di sequenze** che cattura la struttura del grafo
+- ogni sequenza rappresenta un possibile percorso locale/globale
+- i nodi che co-occorrono spesso nello stesso walk diventano **contesti reciproci**
+## Addestramento Skip-Gram identico a Word2Vec
+
+Una volta ottenuto il corpus dei walk:
+
+- applichiamo **esattamente lo stesso algoritmo Skip-Gram** di Word2Vec
+- stesso obiettivo (massimizzare $( P(\text{contesto} \mid \text{target})$
+- stessa procedura di **negative sampling**
+- stesso addestramento tramite **SGD**
+
+Il modello apprende embedding tali che:
+
+- nodi che compaiono in contesti simili → embedding simili
+- la struttura del grafo (community, ruoli, vicinati) viene catturata nei vettori
+
+
