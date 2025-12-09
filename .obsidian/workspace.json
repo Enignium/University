@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Random Walk.md",
+                "file": "Università/Complex Social Network/14. Random Walk.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Random Walk"
+              "title": "14. Random Walk"
             }
           },
           {
@@ -121,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "29b3c19fb4fbd24b",
@@ -238,10 +237,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "5f93272271407608",
+  "active": "7e25559fd694e954",
   "lastOpenFiles": [
     "Università/Complex Social Network/13. Dimensionality Reduction PCA e t-SNE.md",
-    "Random Walk.md",
+    "Università/Complex Social Network/14. Random Walk.md",
     "Università/Complex Social Network/8. Communities.md",
     "Università/Complex Social Network/3. Random Network.md",
     "Università/Complex Social Network/9. Network Robustness.md",
