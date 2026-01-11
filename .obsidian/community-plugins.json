@@ -1,11 +1,11 @@
 [
-  "calendar",
-  "obsidian-icon-folder",
-  "obsidian-dictionary-plugin",
-  "ink",
-  "callout-manager",
+  "obsidian-excalidraw-plugin",
+  "obsidian-copy-block-link",
+  "obsidian-latex-suite",
+  "various-complements",
   "obsidian-git",
-  "execute-code",
   "pdf-plus",
-  "various-complements"
+  "obsidian-functionplot",
+  "callout-manager",
+  "obsidian-icon-folder"
 ]

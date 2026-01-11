@@ -1,7 +1,52 @@
 {
   "callouts": {
-    "custom": [],
-    "settings": {}
+    "custom": [
+      "dimostrazione",
+      "intuito",
+      "info",
+      "condition"
+    ],
+    "settings": {
+      "dimostrazione": [
+        {
+          "changes": {
+            "icon": "lucide-glasses",
+            "color": "221, 120, 120"
+          }
+        }
+      ],
+      "intuito": [
+        {
+          "changes": {
+            "icon": "lucide-lightbulb",
+            "color": "254, 100, 11"
+          }
+        }
+      ],
+      "caution": [
+        {
+          "changes": {
+            "icon": "lucide-binoculars"
+          }
+        }
+      ],
+      "info": [
+        {
+          "changes": {
+            "icon": "lucide-list",
+            "color": "148, 226, 213"
+          }
+        }
+      ],
+      "condition": [
+        {
+          "changes": {
+            "icon": "lucide-flame",
+            "color": "223, 26, 12"
+          }
+        }
+      ]
+    }
   },
   "calloutDetection": {
     "obsidian": true,

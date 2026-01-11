@@ -1,3 +1,7 @@
 {
-  "cssTheme": "Obsidian Nord"
+  "cssTheme": "Catppuccin",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "center-images"
+  ]
 }
