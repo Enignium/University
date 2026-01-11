@@ -61,7 +61,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Ricerca"
             }
           },
           {
@@ -71,14 +71,14 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Segnalibri"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 208
+    "width": 255.5
   },
   "right": {
     "id": "3c81d8118a0af0bd",
@@ -173,7 +173,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 223.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,7 +192,7 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "651fe5e3a4178311",
+  "active": "cbfe473c1620a7fe",
   "lastOpenFiles": [
     "Università/Magistrale/Complex Social Networks/3 Random Network.md",
     "Università/Magistrale/Complex Social Networks/2 Teoria dei Grafi.md",
