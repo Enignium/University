@@ -1,6 +1,6 @@
 {
-  "cssTheme": "Catppuccin",
-  "theme": "obsidian",
+  "cssTheme": "Obsidian Nord",
+  "theme": "system",
   "enabledCssSnippets": [
     "center-images"
   ]
