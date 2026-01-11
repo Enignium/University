@@ -81,10 +81,14 @@
             "id": "72eaf51d14fa3fbb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Senza nome.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "Senza nome"
             }
           }
         ],
@@ -261,8 +265,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "d1718f9e1875bce2",
+  "active": "72eaf51d14fa3fbb",
   "lastOpenFiles": [
+    "Senza nome.md",
     "Università/Complex Social Network/16..md",
     "Università/Complex Social Network/15. Node2Vec.md",
     "Università/Complex Social Network/14. Random Walk.md",
@@ -307,7 +312,6 @@
     "conflict-files-obsidian-git.md",
     "Università/Ml/Ai.md",
     "Università/Dependable/Dependable oggi.md",
-    "Università/Dependable/Appunti.md",
-    "Università/Complex Social Network/Appunti.md"
+    "Università/Dependable/Appunti.md"
   ]
 }
