@@ -1,4 +1,3 @@
-
 ## Definizione di corpo rigido
 ![[Drawing 2025-04-02 17.06.42.excalidraw 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1|200]]
 **Considerato un sistema di masse vale il vincolo di corpo rigido se le distanze tra le masse del sistema sono costanti.**
