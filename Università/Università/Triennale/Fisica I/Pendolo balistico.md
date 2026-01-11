@@ -1,0 +1,8 @@
+![[Drawing 2025-04-02 17.06.42.excalidraw 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 1 1]]Considerata una massa $m$ che si muove di una certa velocità costante $\vec{v_{1i}}$ ed una massa $M$ con velocità iniziale nulla appesa ad una fune ideale, si osserva che nell'istante $t_{i}$  in cui la massa $m$ collide con la massa $M$ per la [[Urti#definizione di urto|definizione di urto]] la quantità di moto del sistema delle due masse si conserva:
+$$P_{i}=mv_{1i}+Mv_{2i}=mv_{1f}+M {v}_{2f}$$
+Considerando che $\vec{v}_{2i} = 0$ e che alla fine dell'urto la massa $m$ si conficca nella massa $M$:
+$${P}_{i}=m{v_{1i}}=(m+M) {v}_{f}$$
+Per cui: $$v_{f} = \frac{m}{m+M}v_{1i}$$
+Osservando che dopo l'impatto il moto prosegue come nel caso del [[Pendolo semplice||pendolo semplice]] e che la risultante delle forze applicate $R_{f}=\vec{T}+\vec{g}(m+M)$, agiscono sulla massa solo [[Forze conservative ed energia meccanica|forze conservative]] e compie lavoro solo la [[Forze conservative ed energia meccanica#Forza peso|forza peso]] con energia potenziale $U(h)=mgH$ per cui l'[[Forze conservative ed energia meccanica#Energia meccanica|energia meccanica]] rimarrà costante:
+$$E_{m_{iniziale}}=E_{m_{finale}}=\frac{1}{2}(m+M)v_{f}^2=mgH$$
+Potendo calcolare $H=L(1-\cos \theta)$  con $L$ lunghezza della fune , dall'espressione dell'energia meccanica noto l'angolo $\theta$ associato alla massima quota raggiunta dalla massa si può risalire alla velocità iniziale $v_{1i}$ della massa $m$.

@@ -1,0 +1,251 @@
+La teoria delle reti random cerca di rappresentare la struttura delle reti che si configurano in natura tramite dei modelli di reti casuali che ne rispecchino le proprietà. 
+
+## Modelli di Random Network 
+
+Si differenziano 2 principali modelli di Reti Random caratterizzati da dei collegamenti applicati casualmente a ciascuna coppia di nodi.
+
+> [!danger] Attenzione
+> Ogni realizzazione di un Random Network a parità di nodi presenti e probabilità sarà leggermente diversa. 
+### Modello di Gilbert 
+
+Il modello di Random Network di Gilbert $G(N,p)$ consiste in $N$ nodi in cui ogni coppia di nodi viene connessa con probabilità $p$. 
+
+Per costruire un Random Network:
+1) Si inizia con $N$ nodi isolati
+2) Si seleziona una coppia di nodi e si genera un numero randomico tra $0$ ed 1. Se il numero generato è più piccolo di $p$ allora si connette la coppia di nodi selezionata con un collegamento, altrimenti si mantengono scollegati. 
+3) Si ripete lo step precedente per ciascuna delle $\frac{N(N-1)}{2}$ coppie di nodi.
+
+### Modello di Erdős-Rényi
+
+Il modello di Random Network di Erdős-Rényi $G(N,L)$ consiste in $N$ nodi connessi esattamente da $L$ collegamenti, dove ogni configurazione con quel numero di collegamenti ha la stessa probabilità di verificarsi.
+
+Per costruire un Random Network:
+1) Si inizia con $N$ nodi isolati.
+2) Si seleziona uniformemente a caso una coppia di nodi tra tutte le coppie possibili che non sono ancora connesse e si aggiunge un collegamento tra loro.
+3) Si ripete lo step precedente finché la rete non possiede esattamente $L$ collegamenti totali.
+
+### Distribuzione del numero di collegamenti 
+
+La probabilità che una particolare realizzazione di un Random Network abbia esattamente $L$ collegamenti fissati il numero di nodi $N$ e la probabilità $p$ che si crei tra una qualsiasi coppia di nodi un collegamento sarà **dato dalla distribuzione binomiale**:
+$$p_{L}=\binom{\frac{N(N-1)}{2}}{L}\cdot p^L\cdot(1 - p)^{\frac{N(N-1)}{2}-L}$$
+
+> [!intuito] Intuito
+> Il coefficiente binomiale $\binom{\frac{N(N-1)}{2}}{L}$ rappresenta tutte le combinazioni in cui è  possibili piazzare $L$ collegamenti fra le $\frac{N(N-1)}{2}$ coppie di nodi nella rete.
+>  
+>   Ciascuna di queste sequenze contenenti $L$ collegamenti effettuati avverrà con probabilità $p^L\cdot(1 - p)^{\frac{N(N-1)}{2}-L}$  (la probabilità che si crei un collegamento $L$ volte per la probabilità che non succeda le volte restanti). 
+
+#### Valore atteso dei collegamenti in un Random Network
+
+Il valore atteso di collegamenti in un Random Network, essendo il [[3 Variabili Aleatorie e distribuzioni di probabilità#Valore atteso|valore atteso]] di una variabile aleatoria con distribuzione binomiale calcolabile come $\langle x\rangle =Np$, sarà:
+$$\langle L \rangle = \sum_{L=0}^{N(N-1)/2} Lp_{L}=p \frac{N(N-1)}{2}$$
+
+> [!caution] Osservazione
+> Il grado medio a parità di numero di nodi della rete $N$ aumenta linearmente all'aumentare della probabilità $p$.
+
+#### Valore atteso del grado in un Random Network 
+
+Dal [[#Valore atteso dei collegamenti|valore atteso dei collegamenti]] è possibile ottenere l'espressione del  [[2 Teoria dei Grafi#Grado medio|grado medio]] come:
+$$\langle k \rangle=\frac{2 \langle L \rangle}{N}=p(N-1)$$
+
+> [!dimostrazione]-  Dimostrazione
+> Data $\langle L\rangle=p\frac{N(N-1)}{2}$ dividendo entrambi i termini per $N$ e moltiplicandoli per $2$ sarà: $$2\frac{\langle L\rangle}{N}=p(N-1)$$ che è proprio l'espressione del [[2 Teoria dei Grafi#Grado medio|grado medio]].
+
+> [!caution] Osservazione
+> Il grado medio in un Random Network è il prodotto tra la probabilità $p$ che due nodi siano connessi ed il termine $(N-1)$ che rappresenta il numero massimo di collegamenti che un nodo può avere in una rete di dimensione $N$.
+> 
+> Il grado medio di un Random Network a parità di numero di nodi $N$ aumenta linearmente con la probabilità $p$.  
+
+### Distribuzione dei gradi 
+
+La probabilità che una particolare realizzazione di un Random Network abbia un nodo qualsiasi  $i$ di grado $k$  sarà **dato dalla distribuzione binomiale**:
+$$p_{k}=\binom{N-1}{k}p^k(1-p)^{N-1-k}$$
+![[Università/Magistrale/Comples Social Networks/Slides/3.pdf#page=35&rect=97,24,264,149|Chapter 3, p.22|650]]
+
+
+> [!caution] Osservazione
+> La distribuzione ha un picco intorno a $\langle k \rangle$. 
+> All'aumentare di $p$ la rete diventa più densa, $\langle k \rangle$ aumenta ed il picco si trasla verso destra. 
+> La larghezza della distribuzione è controllata da $p$ o da $\langle k \rangle$. Più densa è la rete più larga sarà la distribuzione.
+
+#### Approssimazione a distribuzione di Poisson
+
+Nell'ipotesi in cui $k\ll N$ è possibile approssimare il termine $\binom{N-1}{k}$ come: $$\binom{N-1}{k}\simeq\frac{(N-1)^k}{k!}$$ Ed il termine $(1-p)^{N-1-k}$ come:
+$$(1-p)^{N-1-k}=e^{-\langle k\rangle}$$
+
+Da cui è possibile esprimere la distribuzione binomiale come:
+$$p_{k}=\binom{N-1}{k}p^k(1-p)^{N-1-k}\simeq\frac{(N-1)^k}{k!}p^ke^{-\langle k\rangle}$$
+Da cui segue:
+$$p_{k}\simeq e^{-\langle k \rangle}\cdot \frac{\langle k\rangle^k}{k!}$$
+**Questa è l'espressione della distribuzione di Poisson.** 
+Le proprietà di questa distribuzione rispecchiano le proprietà della distribuzione binomiale.
+
+> [!caution] Osservazione
+> Quando si utilizza l'approssimazione di Poisson è fondamentale ricordare che:
+> * **Validità:** Il risultato esatto per la distribuzione dei gradi è la forma binomiale. La distribuzione di Poisson rappresenta un'approssimazione valida nel limite $\langle k \rangle \ll N$. Poiché la maggior parte delle reti di importanza pratica sono **sparse**, questa condizione è tipicamente soddisfatta.
+> * **Semplicità:** Il vantaggio principale della forma di Poisson è che le caratteristiche chiave della rete (come $\langle k \rangle$, $\langle k^2 \rangle$, $\sigma_k$) assumono una forma molto più semplice, dipendendo da un singolo parametro: $\langle k \rangle$.
+> * **Indipendenza da N:** La distribuzione di Poisson non dipende esplicitamente dal numero di nodi $N$. Di conseguenza, le distribuzioni dei gradi di reti di dimensioni diverse ($N$ differenti) ma con lo stesso grado medio $\langle k \rangle$ risultano indistinguibili l'una dall'altra.
+
+## Confronto tra reti reali e modello Random Network 
+
+Il confronto con i dati empirici indica che il modello random non cattura la distribuzione dei gradi delle reti reali. Mentre in una rete random i nodi hanno gradi comparabili, le reti reali mostrano differenze significative e la presenza di nodi altamente connessi.
+
+> [!danger] Attenzione
+> La formula di Poisson contiene il termine $1/k!$ che decresce velocemente, rendendo statisticamente impossibile l'esistenza di nodi con grado molto alto.
+> Di conseguenza, in una rete random la maggior parte dei nodi si trova nella stretta vicinanza del grado medio $\langle k \rangle$, mancando completamente di outliers.
+
+Le discrepanze sono evidenti analizzando la dispersione $\sigma_k$ e i gradi massimi $k_{max}$:
+
+* **Reti Sociali:** Con $\langle k \rangle \approx 1000$, il modello prevede una dispersione minima $\sigma_k \approx 31.6$ e un grado massimo $k_{max} \approx 1185$. Nella realtà esistono individui con oltre 5000 connessioni.
+* **Internet:** Il modello prevede un grado massimo per i router di circa 20, mentre i dati mostrano router con gradi vicini a $10^3$. La dispersione reale $\sigma = 14.14$ è nettamente superiore a quella predetta $\sigma = 2.52$.
+
+Per cui le reti reali mostrano una dispersione dei gradi molto più ampia rispetto alle reti random. La distribuzione di Poisson sottostima drasticamente il numero di nodi ad alto grado.
+
+## Evoluzione della connettività di un random network 
+
+Si osserva che nella costruzione di rete randomiche variando iterativamente $p$ varia la dimensione della **componente connessa più grande** $N_{G}$ del Random Network che si costruisce.
+
+![[Università/Magistrale/Comples Social Networks/Slides/3.pdf#page=51&rect=37,45,336,210|Chapter 3, p.38]]
+
+> [!caution] Osservazione
+> Osserviamo come questa quantità dipenda dal grado medio $\langle k \rangle$ per cui:
+> - Con $p=0$ si avrà $\langle k \rangle=0$, per cui **ciascun nodo sarà isolato** e la componente connessa più larga avrà dimensione $N_{G}=1$ e all'aumentare di $N$ si avrà che $\frac{N_{G}}{N}\to 0$.
+> - Con $p$ = 1 si avrà $\langle k \rangle=N$ per cui il grafo sarà un grafo completo e **tutti i nodi faranno parte della medesima componente**, per cui  sarà $N_{G}=N$ ed all'aumentare di $N$ si avrà che $\frac{N_{G}}{N} \to 1$.
+> La dimensione della componente connessa più larga è rilevante perchè da questa dipende la capacità di propagazione attraverso la rete.
+
+> [!danger] Attenzione
+> - Ci si aspetterebbe che la componente più grande cresca linearmente da $N_G = 1$ a $N_G = N$ se $\langle k \rangle$ aumenta da $0$ a $N - 1$.
+> - Non è così: $N_G/N$ rimane zero per piccoli valori di $\langle k \rangle$, indicando la mancanza di un grande cluster.
+> - Una volta che $\langle k \rangle$ supera un valore critico, $N_G/N$ aumenta, segnalando la rapida comparsa di un grande cluster chiamato *componente gigante*.
+> - Erdős e Rényi hanno predetto che la condizione per l'emergere della componente gigante è:
+> $$\langle k \rangle = 1$$
+
+L'emergere della componente gigante è una transizione di fase fondamentale nelle reti casuali. Al variare del grado medio $\langle k \rangle$, la rete attraversa quattro regimi topologici distinti.
+### Regime Subcritico
+$$0 < \langle k \rangle < 1 \quad \left( p < \frac{1}{N} \right)$$
+
+La probabilità di connessione è molto bassa. Esistono troppo pochi collegamenti per formare strutture complesse.
+
+La rete è frammentata in tante piccole componenti isolate
+Non esiste una componente gigante.
+### Punto Critico (Transizione di Fase)
+$$\langle k \rangle = 1 \quad \left( p = \frac{1}{N} \right)$$
+
+È il punto di svolta. In media, ogni nodo ha un collegamento, permettendo la propagazione della connettività.
+
+Si verifica una transizione di fase.
+Iniziano a formarsi cluster di dimensioni significative.
+### Regime Supercritico
+$$\langle k \rangle > 1 \quad \left( p > \frac{1}{N} \right)$$
+
+ Il numero di collegamenti è sufficiente affinché i piccoli cluster inizino a fondersi tra loro in modo massiccio.
+Emerge la **Componente Gigante**.
+
+ Esiste un unico cluster che contiene una frazione significativa di tutti i nodi ($N_G \sim N$).
+ La rete è divisa in due: la componente gigante e tante piccole isole disconnesse che non riescono ad agganciarsi ad essa.
+### Regime Connesso
+$$\langle k \rangle > \ln N \quad \left( p > \frac{\ln N}{N} \right)$$
+
+La rete diventa **completamente connessa**.
+La componente gigante assorbe l'intera rete ($N_G = N$).
+
+### Considerazioni sulla Connettività e i Regimi nei Network Reali
+![[Università/Magistrale/Comples Social Networks/Slides/3.pdf#page=73&rect=31,99,331,185|Chapter 3, p.60]]
+
+Analizzando le previsioni teoriche applicate alle reti reali, emergono dinamiche fondamentali riguardanti la formazione della "componente gigante" e l'interconnessione globale dei nodi.
+
+* **Esistenza della Componente Gigante:** La maggior parte delle reti reali analizzate possiede un grado medio $\langle k \rangle$ ben superiore alla soglia critica di 1. Questo dato conferma che tali reti si trovano in uno stato in cui emerge inevitabilmente una **componente gigante**, ovvero una porzione della rete che connette la stragrande maggioranza dei nodi.
+
+* **L'Esempio delle Reti Sociali:** Applicando questa formula alla popolazione mondiale ($N \approx 7 \times 10^9$), la soglia critica risulta essere circa **22.7**. Ciò implica che, se in media ogni individuo avesse più di due dozzine di conoscenze, una società modellata come rete casuale dovrebbe teoricamente formare un'unica componente connessa, senza lasciare alcun individuo isolato.
+
+* **Il Regime Supercritico nella Realtà:** Nonostante la teoria sulla connessione totale, l'osservazione suggerisce che la maggior parte delle reti reali si trovi nel **regime supercritico**. Di conseguenza, ci si aspetta la coesistenza di una componente gigante predominante insieme a numerose componenti disconnesse più piccole 
+
+## Small World 
+
+Analizzando la struttura delle reti casuali, emerge una proprietà fondamentale nota come fenomeno "Small World". 
+
+Se consideriamo un nodo di partenza e osserviamo la sua espansione attraverso la rete, il numero di nodi raggiungibili cresce esponenzialmente con la distanza.
+
+In queste condizioni ciascun nodo avrà in media:
+- $\langle k \rangle$ nodi a distanza $1$. 
+- $\langle k \rangle^2$ nodi a distanza $2$. 
+- $\dots$
+-  $\langle k \rangle^d$ nodi a distanza $d$. 
+
+> [!caution] Osservazione
+> In una rete con $<k> = 1000$ ci si aspetta $10^6$ individui a distanza $2$ e circa un miliardo a distanza $3$!
+
+Questa rapida espansione implica che la distanza necessaria per coprire l'intera rete, ovvero per raggiungere tutti gli $N$ nodi, **è sorprendentemente piccola rispetto alla dimensione totale del sistema.**
+
+Questo si traduce nel fatto che la distanza media $\langle d \rangle$ o il diametro $d_{max}$ della rete non crescono linearmente con $N$, ma dipendono logaritmicamente dalla dimensione del sistema.
+
+La formula fondamentale che descrive questo comportamento è: $$\langle d \rangle \approx \frac{\ln N}{\ln \langle k \rangle}$$
+> [!dimostrazione]- Dimostrazione
+>  Per determinare la relazione tra la dimensione della rete e la distanza massima, calcoliamo il numero totale di nodi $N(d)$ che si trovano entro una distanza $d$ dal nodo di partenza. Questo valore è dato dalla somma dei nodi a ogni livello di distanza, che forma una serie geometrica:
+> $$N(d) \approx 1 + \langle k \rangle + \langle k \rangle^2 + \dots + \langle k \rangle^d$$
+> Utilizzando la formula per la somma di una [[Progressione geometrica|progressione geometrica]], otteniamo:
+> $$N(d) = \frac{\langle k \rangle^{d+1}-1}{\langle k \rangle-1}$$
+> Poiché la distanza massima $d_{max}$ deve permettere di raggiungere tutti i nodi della rete, imponiamo la condizione $N(d_{max}) \approx N$.  Assumendo un grado medio $\langle k \rangle \gg 1$, possiamo semplificare l'espressione ignorando i termini meno significativi (il $-1$ al numeratore e al denominatore):
+> $$N \approx \frac{\langle k \rangle^{d_{max}+1}}{\langle k \rangle} = \langle k \rangle^{d_{max}}$$
+> Per esplicitare la dipendenza di $d_{max}$, prendiamo il logaritmo naturale di entrambi i membri:
+> $$\ln N \approx \ln (\langle k \rangle^{d_{max}}) = d_{max} \ln \langle k \rangle$$
+> Da cui otteniamo la legge di scaling per il diametro della rete:
+> $$d_{max} \approx \frac{\ln N}{\ln \langle k \rangle}$$
+> Poiché il diametro è spesso dominato da pochi percorsi estremi, è più robusto fare riferimento alla distanza media $\langle d \rangle$, che segue la medesima legge di scala:
+> $$\langle d \rangle \approx \frac{\ln N}{\ln \langle k \rangle}$$
+> Questa formula dimostra che la distanza media è inversamente proporzionale al logaritmo del grado medio: reti più dense (con $\langle k \rangle$ maggiore) risultano drasticamente più "piccole" in termini di separazione tra i nodi.
+
+Questo comportamento indica che, anche in reti enormi come quella sociale globale ($N \approx 7 \times 10^9$) o il Web, i nodi sono separati da un numero esiguo di passaggi. Ad esempio, stimando un grado medio $\langle k \rangle \approx 10^3$ per le relazioni sociali, la distanza media calcolata risulta essere appena superiore a 3, un valore che supporta e rafforza la celebre teoria dei "sei gradi di separazione".
+
+*aggiungere confronto con random network che invece fa la pasta morbida (cuoce troppo)*
+## Coefficiente di clustering in un Random Network
+
+È possibile calcolare il [[2 Teoria dei Grafi#Coefficiente di clustering|coefficiente di clustering]] $C_{i}$ per un nodo in un Random Network noto il [[#Valore atteso dei collegamenti in un Random Network|valore atteso dei collegamenti]] come:
+$$C_{i}=\frac{2\langle L_{i} \rangle}{k_{i}(k_{i}-1)}=p=\frac{\langle k \rangle}{(N-1)}$$
+Dove otteniamo $p=\frac{\langle k \rangle}{N-1}$ dall'espressione del [[#Valore atteso del grado in un Random Network|grado medio in un random network]].
+> [!intuito] Intuito
+> Fissato $\langle k \rangle$ più larga sarà la rete minore sarà il coefficente di clustering proporzionale a $\frac{1}{N}$. 
+> Il coefficente di clustering locale per un nodo è indipendente dal grado del nodo.
+
+![[Università/Magistrale/Comples Social Networks/Slides/3.pdf#page=89&rect=94,15,275,219|Chapter 3, p.76]]
+
+> [!caution] Osservazione
+> Osserviamo che nelle reti reali all'aumentare del grado del nodo preso in considerazione il coefficente di clustering locale decresce. 
+> Il modello di Random Network non cattura questo comportamento.
+> Un modello che estende il Random Network per approssimare questo comportamento è il modello Watts-Strogatz
+
+## Modello Watts-Strogatz
+
+Il modello Random Network riesce a spiegare la proprietà "Small World" (bassa distanza media), ma fallisce nel riprodurre l'alto coefficiente di clustering osservato nelle reti reali. Al contrario, i reticoli regolari (Regular Lattices) hanno un alto clustering ma mancano della proprietà Small World.
+
+Il modello Watts-Strogatz è un'estensione del modello random motivata da due considerazioni fondamentali sulle reti reali:
+
+1.  **Distanza media ridotta:** Nelle reti reali la distanza media scala logaritmicamente con $N$ (come nei random network) piuttosto che polinomialmente (come nei reticoli regolari).
+$$d_{max} \approx \frac{\ln N}{\ln \langle k \rangle}$$
+2.  **Alto Clustering:** Il coefficiente di clustering medio nelle reti reali è molto più alto di quanto previsto per una rete casuale con simili $N$ e $L$.
+
+> [!intuito] Intuito
+> Il modello Watts-Strogatz funge da interpolazione tra un **reticolo regolare** (alto ordine, alto clustering, distanze lunghe) e una **rete random** (basso clustering, distanze brevi).
+
+![[Università/Magistrale/Comples Social Networks/Slides/3.pdf#page=92&rect=105,119,261,211|Chapter 3, p.79|700]]
+Una rete Watts-Strogatz viene costruita attraverso il seguente algoritmo di *rewiring*:
+
+1.  **Stato Iniziale (Reticolo):** Si parte da un anello di nodi, dove ogni nodo è connesso ai suoi vicini immediati e ai successivi vicini. In questa configurazione iniziale, il clustering è molto alto con $\langle C \rangle = 3/4$.
+2.  **Rewiring:** Con probabilità $p$, ogni collegamento viene "staccato" e riconnesso a un nodo scelto casualmente nella rete.
+3.  **Variazione di p:**
+    * Se $p=0$: Nessun cambiamento, la rete rimane un reticolo regolare.
+    * Se $p=1$: Tutti i link sono stati ricablati, la rete diventa un Random Network.
+
+Le simulazioni numeriche mostrano che per un intervallo intermedio di valori del parametro di rewiring $p$:
+* La **lunghezza media del percorso** crolla rapidamente (diventa bassa).
+* Il **coefficiente di clustering** rimane alto (vicino a quello del reticolo originale).
+
+> [!caution] Osservazione
+> Per valori piccoli di $p$, la rete mantiene l'alto clustering locale (tipico del reticolo), ma i pochi collegamenti a lungo raggio (generati casualmente) agiscono come "scorciatoie" (shortcuts) che diminuiscono drasticamente le distanze tra i nodi.
+>
+> Questo riproduce la **coesistenza** di alto clustering e fenomeno Small-World.
+
+Nonostante il successo nello spiegare il clustering, il modello presenta dei limiti nel rappresentare altre caratteristiche delle reti reali:
+
+* **Distribuzione dei Gradi:** Il modello predice una distribuzione dei gradi limitata, simile alla Poissoniana dunque **sono assenti nodi di grado molto elevato (hubs)**.
+* **Indipendenza di C(k):** Il modello predice un coefficiente di clustering $C(k)$ indipendente da $k$ contrariamente a quanto spesso osservato in natura dove $C(k)$ tende a decrescere al crescere del grado.
+
