@@ -11,10 +11,14 @@
             "id": "651fe5e3a4178311",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Università/Magistrale/Comples Social Networks/2 Teoria dei Grafi.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "2 Teoria dei Grafi"
             }
           }
         ]
@@ -91,12 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Università/Magistrale/Comples Social Networks/2 Teoria dei Grafi.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura"
+              "title": "Struttura di 2 Teoria dei Grafi"
             }
           }
         ]
@@ -187,44 +192,43 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "651fe5e3a4178311",
+  "active": "cbfe473c1620a7fe",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "scratch.md",
-    "Università/Triennale/Fisica I/Impulso e quantità di moto.md",
+    "Università/Magistrale/Comples Social Networks/3 Random Network.md",
+    "Università/Magistrale/Comples Social Networks/4 The Scale-Free Property.md",
+    "Università/Magistrale/Comples Social Networks/2 Teoria dei Grafi.md",
+    "Università/Magistrale/Comples Social Networks/8 Network Robustness.md",
+    "Università/Magistrale/Comples Social Networks/13 Embedding dei nodi.md",
+    "Università/Magistrale",
+    "Università/Complex Social Networks/2 Teoria dei Grafi.md",
+    "Università/Magistrale/Comples Social Networks/PYTHON/PYTHON.md",
+    "Università/Magistrale/Comples Social Networks/PYTHON/Complessita computazionale.md",
     "Università/Magistrale/Comples Social Networks/Slides/9.pdf",
     "Università/Magistrale/Comples Social Networks/Slides/8.pdf",
     "Università/Magistrale/Comples Social Networks/Slides/7.pdf",
-    "Università/Magistrale/Comples Social Networks/Slides/4.pdf",
     "Università/Magistrale/Comples Social Networks/Slides/6.pdf",
     "Università/Magistrale/Comples Social Networks/Slides/5.pdf",
+    "Università/Magistrale/Comples Social Networks/Slides/4.pdf",
+    "Università/Magistrale/Comples Social Networks/Slides/3.pdf",
     "Università/Magistrale/Comples Social Networks/Slides/2.pdf",
     "Università/Magistrale/Comples Social Networks/Slides/12.pdf",
-    "Università/Magistrale/Comples Social Networks/Slides/3.pdf",
-    "Università/Magistrale/Comples Social Networks/Slides/11.pdf",
-    "Università/Magistrale/Comples Social Networks/PYTHON/PYTHON.md",
-    "Università/Magistrale/Comples Social Networks/PYTHON/Complessita computazionale.md",
-    "Università/Magistrale/Comples Social Networks/9 Communities.md",
-    "Università/Magistrale/Comples Social Networks/8 Network Robustness.md",
-    "Università/Magistrale/Comples Social Networks/7 Degree correlation.md",
     "Università/Magistrale/Comples Social Networks/6 Evolving Networks.md",
     "Università/Magistrale/Comples Social Networks/5 Modello Barabasi-Albert.md",
-    "Università/Magistrale/Comples Social Networks/4 The Scale-Free Property.md",
-    "Università/Magistrale/Comples Social Networks/13 Embedding dei nodi.md",
-    "Università/Magistrale/Comples Social Networks/12 Machine Learning for link prediction.md",
+    "Università/Magistrale/Comples Social Networks/9 Communities.md",
+    "Università/Magistrale/Comples Social Networks/7 Degree correlation.md",
     "Università/Magistrale/Comples Social Networks/11 Classical Link Prediction in Complex Networks.md",
-    "Università/Magistrale/Comples Social Networks/10 Spreading Phenomena.md",
-    "Matematica/Algebra Lineare/Trasformazioni lineari.md",
-    "Matematica/Algebra Lineare/Matrici.md",
-    "Matematica/0 IMG_RESOURCES/Drawing 2025-04-02 17.06.42.excalidraw 1 1 1 1 1 1 1 1 1 1 1.md",
-    "Matematica/0 IMG_RESOURCES/Drawing 2025-04-02 17.06.42.excalidraw 1 1 1 1 1 1 1 1 1 1 1 1.md",
-    "Informatica/Sistemi Operativi/Esecuzione Diretta.md",
-    "Excalidraw/quaderno.md",
-    "Università/Magistrale/Comples Social Networks/3 Random Network.md",
-    "Università/Magistrale/Dependable computer system analysis/9/10 Reti di Petri.md",
-    "Università/Magistrale/Dependable computer system analysis/10 Reti di Petri.md",
+    "Università/Magistrale/Comples Social Networks/12 Machine Learning for link prediction.md",
     "Università/Magistrale/Comples Social Networks/1 Python e Algoritmi.md",
-    "Università/Magistrale/Artificial Intelligence/3 Reti Neurali.md",
+    "Università/Magistrale/Comples Social Networks/10 Spreading Phenomena.md",
+    "Università/Complex Social Networks/1 Python e Algoritmi.md",
+    "Università/Complex Social Networks/PYTHON/PYTHON.md",
+    "Università/Complex Social Networks/PYTHON/Complessita computazionale.md",
+    "Università/Complex Social Networks/9 Communities.md",
+    "Università/Complex Social Networks/8 Network Robustness.md",
+    "Università/Complex Social Networks/7 Degree correlation.md",
+    "Università/Complex Social Networks/5 Modello Barabasi-Albert.md",
+    "Università/Complex Social Networks/6 Evolving Networks.md",
+    "Università/Complex Social Networks/4 The Scale-Free Property.md",
     "Università/Magistrale/Comples Social Networks/Appunti ordinati/Complex Social Network/Immagini/Pasted image 20251102174706.png",
     "Università/Magistrale/Comples Social Networks/Appunti ordinati/Complex Social Network/Immagini/Pasted image 20251102182843.png",
     "Università/Magistrale/Comples Social Networks/Appunti ordinati/Complex Social Network/Immagini/Pasted image 20251102181310.png",
