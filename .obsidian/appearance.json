@@ -1,8 +1,8 @@
 {
-  "cssTheme": "Velocity",
+  "cssTheme": "Obsidian Nord",
   "theme": "system",
   "enabledCssSnippets": [
     "center-images"
   ],
-  "accentColor": "#001eb3"
+  "accentColor": ""
 }
